@@ -98,3 +98,5 @@ application {
 - **User Interaction**: Add more interactivity, such as keyboard shortcuts or additional buttons.
 - **Database Connectivity**: Integrate a database to enable data storage and retrieval.
 
+
+Make sure to replace `https://github.com/your-username/javafx-webapp-starter.git` and `https://github.com/your-username` with your actual repository URL and GitHub profile link.
