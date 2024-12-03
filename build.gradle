@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.openjfx:javafx-controls:20.0.1'
+    implementation 'com.jpro:jpro-web:2023.1.0' // Add JPro for web support
+}
+
+application {
+    mainClass = 'com.example.App'
+}
+
+tasks.named('run') {
+    doFirst {
+        jvmArgs = [
+            '--module-path', System.getProperty('java.home') + '/lib',
+            '--add-modules', 'javafx.controls'
+        ]
+    }
+}
